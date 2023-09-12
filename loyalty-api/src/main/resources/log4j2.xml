@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="WARN" packages="org.apache.logging.log4j.core,io.sentry.log4j2">
+    <Properties>
+        <Property name="eventsLogDir">${bundle:log4j2Config:eventsLogDirectory}</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="SuperstoreLoyaltyLog" fileName="/app/superstore-loyalty/logs/superstore_aggregator.log"
+                     filePattern="/app/superstore-loyalty/logs/superstore_loyalty.%d{yyyy-MM-dd}-%i.gz">
+            <JsonLayout compact="true" eventEol="true" locationInfo="true"  stacktraceAsString="true">
+                <KeyValuePair key="time" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSS}"/>
+                <KeyValuePair key="requestId" value="${ctx:requestId}"/>
+                <KeyValuePair key="traceId" value="${ctx:X-NYK-Trace-Id}"/>
+                <KeyValuePair key="spanId" value="${ctx:X-NYK-Span-Id}"/>
+                <KeyValuePair key="parentSpanId" value="${ctx:X-NYK-Parent-Span-Id}"/>
+            </JsonLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="1 GB"/>
+            </Policies>
+        </RollingFile>
+        <Async name="AsyncSuperstoreLoyaltyLog">
+            <AppenderRef ref="SuperstoreLoyaltyLog"/>
+        </Async>
+        <Sentry name="Sentry"/>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="AsyncSuperstoreLoyaltyLog"/>
+            <AppenderRef ref="Sentry" level="ERROR"/>
+               <!--<AppenderRef ref="Console"/> -->
+        </Root>
+    </Loggers>
+</Configuration>

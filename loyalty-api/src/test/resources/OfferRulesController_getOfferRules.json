@@ -1,0 +1,12 @@
+[
+    {
+    "name": "success",
+    "requestParams": "{\"paged\":\"true\",\"page\":\"0\",\"size\":\"10\",\"sort\":\"id,ASC\"}",
+    "outputJSON": "{\"success\":true,\"message\":\"OK\",\"statusCode\":\"200\",\"data\":{\"content\":[{\"id\":3,\"deleted\":false,\"offerRuleName\":\"TestRule2\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null,\"newUserRule\": false,\"userSegmentQuery\":{\"noOfOrders\":0}}],\"pageable\":\"INSTANCE\",\"totalElements\":1.0,\"totalPages\":1.0,\"last\":true,\"numberOfElements\":1.0,\"first\":true,\"sort\":{\"unsorted\":true,\"sorted\":false,\"empty\":true},\"size\":1.0,\"number\":0.0,\"empty\":false}}",
+    "thirdPartyMockResponse": {
+        "existingOfferRule": "{\"id\":3,\"offerRuleName\":\"TestRule2\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null}"
+    },
+    "ignoredKeys": [
+    ]
+  }
+]

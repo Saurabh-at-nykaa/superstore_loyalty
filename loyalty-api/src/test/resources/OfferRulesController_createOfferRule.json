@@ -1,0 +1,21 @@
+[{
+        "name": "failure",
+        "inputJSON": "{\"offerRuleName\":\"TestRule2\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null}",
+        "outputJSON": "{\"success\":false,\"message\":\"Offer rule with this name already exists\",\"responseProtocol\":null,\"requestProtocol\":null,\"userTrackingId\":null,\"statusCode\":null,\"data\":null}",
+        "thirdPartyMockResponse": {
+            "existingOfferRule": "{\"offerRuleName\":\"TestRule3\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null}",
+            "savedOfferRule": "null"
+        },
+        "ignoredKeys": ["newUserRule", "query"]
+    },
+    {
+        "name": "success",
+        "inputJSON": "{\"offerRuleName\":\"TestRule2\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null}",
+        "outputJSON": "{\"success\":true,\"message\":\"OK\",\"statusCode\":\"200\",\"data\":{\"id\":1,\"deleted\":false,\"offerRuleName\":\"TestRule2\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null,\"newUserRule\":false,\"userSegmentQuery\":{\"noOfOrders\":0}}}",
+        "thirdPartyMockResponse": {
+            "existingOfferRule": "null",
+            "savedOfferRule": "{\"offerRuleName\":\"TestRule2\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null}"
+        },
+        "ignoredKeys": ["newUserRule", "query"]
+    }
+]

@@ -1,0 +1,20 @@
+[
+  {
+  "name": "no_offer_running",
+  "outputJSON": "{\"success\":true,\"message\":\"success\",\"responseProtocol\":null,\"requestProtocol\":null,\"userTrackingId\":null,\"statusCode\":\"200\",\"data\":[]}",
+  "thirdPartyMockResponse": {
+    "customerId": "30",
+    "loyaltyCustomerMappingEntity": "[]"
+  },
+  "ignoredKeys": []
+ },
+  {
+    "name": "offers_exists_and_running",
+    "outputJSON": "{\"success\":true,\"message\":\"success\",\"statusCode\":\"200\",\"data\":[]}",
+    "thirdPartyMockResponse": {
+      "customerId": "123",
+      "loyaltyCustomerMappingEntity": "[{\"id\":3,\"created\":\"2023-02-31\",\"updated\":\"2023-02-31\",\"deleted\":\"false\",\"customerId\":123,\"offerId\":123,\"offerTypeUserResult\":\"200.0\",\"currentProgress\":\"150.0\",\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\"}]"
+    },
+    "ignoredKeys": []
+  }
+]

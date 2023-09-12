@@ -1,0 +1,29 @@
+[
+  {
+    "name": "loadCacheAll",
+    "requestParams": "{\"name\":\"all\"}",
+    "outputJSON": "{\"success\": true,\"message\": \"OK\",\"responseProtocol\": null,\"requestProtocol\": null,\"userTrackingId\": null,\"statusCode\": \"200\",\"data\": \"cache reloaded\"}",
+    "thirdPartyMockResponse": {
+    },
+    "ignoredKeys": [
+    ]
+  },
+  {
+    "name": "loadCacheSystem",
+    "requestParams": "{\"name\":\"system\"}",
+    "outputJSON": "{\"success\": true,\"message\": \"OK\",\"responseProtocol\": null,\"requestProtocol\": null,\"userTrackingId\": null,\"statusCode\": \"200\",\"data\": \"cache reloaded\"}",
+    "thirdPartyMockResponse": {
+    },
+    "ignoredKeys": [
+    ]
+  },
+  {
+    "name": "loadCacheFailre",
+    "requestParams": "{\"name\":\"34242342\"}",
+    "outputJSON": "{\"success\": true,\"message\": \"OK\",\"responseProtocol\": null,\"requestProtocol\": null,\"userTrackingId\": null,\"statusCode\": \"200\",\"data\": \"cache reloaded\"}",
+    "thirdPartyMockResponse": {
+    },
+    "ignoredKeys": [
+    ]
+  }
+]

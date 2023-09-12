@@ -1,0 +1,19 @@
+[
+  {
+    "name": "offer_rule_not_found",
+    "inputJSON": "{\"offerId\":123, \"counter\": 0, \"triggerFireTime\":\"2024-02-31\"}",
+    "outputJSON": "{\"success\":true,\"message\":\"success\",\"responseProtocol\":null,\"requestProtocol\":null,\"userTrackingId\":null,\"statusCode\":\"200\",\"data\":[]}",
+    "thirdPartyMockResponse": {},
+    "ignoredKeys": []
+  },
+  {
+    "name": "offers_exists_and_running",
+    "outputJSON": "{\"success\":true,\"message\":\"success\",\"statusCode\":\"200\",\"data\":[]}",
+    "thirdPartyMockResponse": {
+      "customerId": "123",
+      "offerRule": "{\"id\":3,\"deleted\":false,\"offerRuleName\":\"TestRule2\",\"isActive\":false,\"domain\":\"NYKAA_D\",\"nykaaShare\":100.0,\"brandShare\":0.0,\"offerType\":\"MONTHLY_SPEND\",\"targetType\":\"FIXED\",\"targetValues\":[\"100\",\"200\",\"300\"],\"rewardPointType\":\"FLAT\",\"rewardPointValues\":[\"1\",\"2\",\"3\"],\"maxReward\":5,\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\",\"rewardPointExpiryUnit\":\"DAYS\",\"rewardPointExpiryValue\":24,\"fixedRewardPointExpiry\":null}",
+      "loyaltyCustomerMappingEntity": "[{\"id\":3,\"created\":\"2023-02-31\",\"updated\":\"2023-02-31\",\"deleted\":\"false\",\"customerId\":123,\"offerId\":123,\"offerTypeUserResult\":\"200.0\",\"currentProgress\":\"150.0\",\"startDate\":\"2022-12-01\",\"endDate\":\"2022-12-31\"}]"
+    },
+    "ignoredKeys": []
+  }
+]

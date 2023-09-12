@@ -1,0 +1,7 @@
+{
+  "testData": {
+    "1_passed_fetchEDD": "{\"cartId\": \"f89a51fa-ccba-463a-93f8-9cc32b488664\",  \"orderId\": \"\",\"domain\": \"nykaaD\",\"pincode\": \"562123\",\"country\": \"IN\",  \"requestedAt\": \"1659340978728\",  \"isGiftWrap\": false,  \"source\": \"cart\",  \"fetchServiceability\": true,\"fetchAllocation\": true,  \"skus\": {\"NS1244A01LBUNDLE\": {\"sku\": \"NS1244A01LBUNDLE\",\"type\": \"bundle\",\"orderId\": \"\",\"quantity\": \"2\",\"vendorId\": null,\"unitPriceInclTax\": 1376,\"discount\": 0,\"childItems\": [{ \"sku\": \"70501062401\", \"type\": \"simple\", \"orderId\": \"\", \"quantity\": \"1\", \"vendorId\": null, \"unitPriceInclTax\": 688, \"discount\": 0},{ \"sku\": \"8850007541684\", \"type\": \"simple\", \"orderId\": \"\", \"quantity\": \"1\", \"vendorId\": null, \"unitPriceInclTax\": 688, \"discount\": 0}]}}}",
+
+    "1_passed_singleUpload": "{\"pincode\":\"562123\",\"warehouse\":\"NBD\",\"isActive\":1,\"orderToShippedTat\":12,\"shippedToDeliveredTat\":24,\"buffer\":12,\"remarks\":\"thisistesting\"}"
+  }
+}
